@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap");
+
+:root {
+  /* Primary Color */
+  --color-pale-blue: hsl(225, 100%, 94%);
+  --color-bright-blue: hsl(245, 75%, 52%);
+
+  /* Neutral Color */
+  --color-neutral-pale-blue: hsl(225, 100%, 98%);
+  --color-neutral-desaturated-blue: hsl(224, 23%, 55%);
+  --color-dark-blue: hsl(223, 47%, 23%);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  min-height: 100dvh;
+  display: grid;
+  place-content: center;
+
+  background-image: url(./images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: var(--color-pale-blue);
+}
+
+.card {
+  width: 350px;
+  background-color: #fff;
+  border-radius: 0.8rem;
+}
+
+.card-image > img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.8rem 0.8rem 0 0;
+}
+
+.card-content {
+  text-align: center;
+  padding: 1.2rem;
+}
+
+.card-content > .title {
+  font-size: 18px;
+  margin-bottom: 0.6rem;
+}
+
+.card-content > .subtitle {
+  font-size: 16px;
+  margin-bottom: 0.6rem;
+  opacity: 0.7;
+  color: var(--color-neutral-desaturated-blue);
+}
+
+.card-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1.2rem;
+  background-color: var(--color-neutral-pale-blue);
+  padding: 0.4rem 0;
+  border-radius: 0.9rem;
+
+  margin: 1rem 0;
+}
+
+.card-price > img {
+  width: 32px;
+  height: 32px;
+}
+
+.card-price > a {
+  font-weight: 500;
+}
+
+.card-price > a:hover {
+  text-decoration: none;
+}
+
+.card-price-content > h4,
+p {
+  margin-bottom: 0.2rem;
+}
+
+.card-button {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.card-button > button {
+  outline: none;
+  border: none;
+}
+
+.card-button > .btn-primary {
+  padding: 16px 0;
+  background-color: var(--color-bright-blue);
+  color: white;
+  border-radius: 0.8rem;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.card-button > .btn-secondary {
+  padding: 16px 0;
+  background: none;
+  color: var(--color-neutral-desaturated-blue);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: var(--color-pale-blue);
+  }
+}
