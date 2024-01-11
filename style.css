@@ -44,6 +44,10 @@ body {
   width: 350px;
   background-color: #fff;
   border-radius: 0.8rem;
+  box-shadow: 0.3px 0.5px 0.7px hsl(var(--color-dark-blue) / 0.33),
+    0.8px 1.6px 2px -0.8px hsl(var(--color-dark-blue) / 0.33),
+    2px 4px 5px -1.7px hsl(var(--color-dark-blue) / 0.33),
+    4.8px 9.6px 12.1px -2.5px hsl(var(--color-dark-blue) / 0.33);
 }
 
 .card-image > img {
